@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Counter</title>
+	<link rel="stylesheet"  href="style.css">
+</head>
+<body>
+	<script>
+		var num=0;
+	</script>
+    <div class="wrapper">
+    	<div class="container">
+    		<h1>Counter</h1>
+    		<div class="display">
+    			<h3 id=cal>0</h3>
+    		</div>
+    		<div class="buttons">
+    		<button onclick="min()" id="minus" class="btn">Lower Count</button>
+    		<button onclick="add()" id="plus" class="btn">Add Count</button>
+    	    </div>
+    	</div>
+    </div>
+
+    <script>
+    	var num=0;
+
+    	function min(){
+    		num=num-1;
+
+    		document.getElementById('cal').innerHTML=(num);
+    	}
+
+    	function add(){
+    		num=num+1;
+
+    		document.getElementById('cal').innerHTML=(num);
+    	}
+    </script>
+</body>
+</html>
